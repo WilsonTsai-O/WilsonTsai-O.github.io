@@ -11,42 +11,43 @@
         padding: 0;
         font-family: "Segoe UI", "Roboto", sans-serif;
 
-        /* 藍白柔和科技背景 */
-        background: linear-gradient(135deg, #eaf3ff, #ffffff);
+        /* 深藍＋科技線條背景 */
+        background: #0b1e38;
         background-image:
-            linear-gradient(rgba(0, 120, 215, 0.10) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 120, 215, 0.10) 1px, transparent 1px),
-            linear-gradient(135deg, #eaf3ff, #ffffff);
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(135deg, #1d3d77, #0b1e38);
         background-size: 40px 40px, 40px 40px, cover;
-        background-blend-mode: lighten;
+        background-blend-mode: overlay;
+        color: white;
     }
 
     .container {
-        max-width: 800px;
-        margin: 120px auto;
-        background: rgba(255, 255, 255, 0.80);
-        backdrop-filter: blur(10px);
+        max-width: 850px;
+        margin: 100px auto;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
         padding: 40px;
-        border-radius: 18px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 35px rgba(0, 0, 0, 0.25);
         text-align: center;
     }
 
     h1 {
         font-size: 42px;
-        color: #0a4da3;
+        color: #a9c8ff;
         font-weight: 700;
         margin-bottom: 15px;
     }
 
     p {
-        color: #222;
+        color: #e6eaff;
         font-size: 18px;
         line-height: 1.6;
     }
 
     .contact a {
-        color: #0a4da3;
+        color: #6da8ff;
         font-weight: bold;
         text-decoration: none;
         font-size: 20px;
@@ -55,8 +56,38 @@
     .contact a:hover {
         text-decoration: underline;
     }
-</style>
 
+    /* 新增：作品區塊 */
+    .projects {
+        margin-top: 50px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+    }
+
+    .projects h2 {
+        font-size: 32px;
+        color: #99baff;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .project-item {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .project-item a {
+        color: #7fb3ff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .project-item a:hover {
+        text-decoration: underline;
+    }
+
+</style>
 </head>
 <body>
 
@@ -72,6 +103,13 @@
     <div class="contact-card">
       <h2>就讀學校</h2>
       <p>國立東華大學資訊管理系</p>
+    </div>
+     <div class="projects">
+        <h2>My Projects</h2>
+
+        
+        <p class="project-item">（你可以在這裡放你的作品連結、圖片、GitHub、作品集網站）</p>
+        <p class="project-item">範例：<a href="https://github.com/wilsontsai-o" target="_blank">我的 GitHub 作品</a></p>
     </div>
   </div>
 
